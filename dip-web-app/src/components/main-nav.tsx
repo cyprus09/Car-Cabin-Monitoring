@@ -1,12 +1,13 @@
-import React from 'react'
+// components/main-nav.tsx
+import React from 'react';
+import { Button, buttonVariants} from "@/components/ui/button"
 
 
-const MainComponent = () => {
+export default function MainComponent() {
   return (
-        <main className=''>
-            
-        </main>
-  )
+    <div className="gradient">
+      <Button variant="outline" className='my-3 mx-3'>Start Training</Button>
+    </div>
+  );
 }
 
-export default MainComponent
