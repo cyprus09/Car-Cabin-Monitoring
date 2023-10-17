@@ -1,12 +1,12 @@
 // pages/index.tsx
 import React from 'react';
-import MainComponent from '@/components/main-nav';
-import NavComponent from '@/components/nav-bar';
 import { CardWithForm } from '@/components/main-card';
+import NavBar from '@/components/nav-bar';
 
 export default function Home() {
   return (
     <div>
+      <NavBar />
       <CardWithForm />
     </div>
   );
