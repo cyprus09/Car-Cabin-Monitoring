@@ -1,0 +1,13 @@
+train: ./data/train/images
+val: ./data/valid/images
+test: ./data/test/images
+
+nc: 14
+names: ['backpack', 'bag', 'book', 'bottle', 'cell phone', 'food', 'glasses', 'jacket', 'laptop', 'others', 'paper', 'pen', 'person', 'seatbelt']
+
+roboflow:
+  workspace: ntu-ryugy
+  project: incar_od1
+  version: 20
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ntu-ryugy/incar_od1/dataset/20
