@@ -9,7 +9,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Label } from "@/components/ui/label"
 import {
   Select,
@@ -20,6 +21,7 @@ import {
 } from "@/components/ui/select"
 
 export function CardWithForm() {
+
   return (
     <div className="gradient display-flex justify-center align-center">
     <Card className="w-[350px]">
@@ -37,9 +39,15 @@ export function CardWithForm() {
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent position="popper">
+                    <Link href="https://github.com/cyprus09/Car-Cabin-Monitoring">
                   <SelectItem value="next">Object Detection</SelectItem>
+                  </Link>
+                  <Link href="https://github.com/cyprus09/Car-Cabin-Monitoring">
                   <SelectItem value="sveltekit">Action Detection 1</SelectItem>
+                  </Link>
+                  <Link href="https://github.com/cyprus09/Car-Cabin-Monitoring">
                   <SelectItem value="astro">Action Detection 2</SelectItem>
+                  </Link>
                 </SelectContent>
               </Select>
             </div>
