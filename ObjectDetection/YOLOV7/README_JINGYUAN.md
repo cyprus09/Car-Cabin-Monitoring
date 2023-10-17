@@ -6,6 +6,7 @@ To do object detection with YOLOV7:
 or
 python detect.py --weights runs/train/yolov78/weights/best.pt --source test_photos/video2.mp4
 The path for YOLOV7 trained with DNA dataset: /media/ntu/volume1/home/s123md302_01/DIP/object_detection/yolov7/runs/train/yolov78/weights/best.pt
+
 5. the image with the result is saved in: runs/detect/exp(n)
 
 Command to train latest Dataset Yi Ming gave me
