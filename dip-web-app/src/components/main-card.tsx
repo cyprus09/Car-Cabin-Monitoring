@@ -41,7 +41,7 @@ export function CardWithForm() {
                 </SelectTrigger>
                 <SelectContent position="popper">
                   <SelectItem value="https://google.com">YoloV7 (Object Recognition)</SelectItem>
-                  <SelectItem value="https://www.youtube.com">Action Recognition 1</SelectItem>
+                  <SelectItem value="/Users/Dell1/Downloads/front1_outcome.MP4">Action Recognition 1</SelectItem>
                   <SelectItem value="https://www.youtube.com/watch?v=5eCg1Def1ik">Action Recognition 2</SelectItem>
                 </SelectContent>
               </Select>
