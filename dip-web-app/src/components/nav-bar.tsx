@@ -9,7 +9,7 @@ function NavBar() {
 
   const fontStyles = {
     fontFamily: 'Roboto, sans-serif', 
-    fontSize: '2 rem',
+    fontSize: '1.5rem',
     fontWeight: 'bold', 
     color: '#7E22CE', 
   };
@@ -24,7 +24,6 @@ function NavBar() {
               <Link href="/">
                 <h1 style={fontStyles}>Car-Cabin-Monitoring System</h1>
               </Link>
-              {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"

@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 
 import { Button } from "@/components/ui/button"
@@ -9,8 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+
 import { Label } from "@/components/ui/label"
 import {
   Select,
@@ -27,7 +28,7 @@ export function CardWithForm() {
     <Card className="w-[350px]">
       <CardHeader>
         <CardTitle>Create Model</CardTitle>
-        <CardDescription>Deploy which model you wish to explore.</CardDescription>
+        <CardDescription>Select which model you wish to explore.</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
@@ -39,15 +40,9 @@ export function CardWithForm() {
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                    <Link href="https://github.com/cyprus09/Car-Cabin-Monitoring">
-                  <SelectItem value="next">Object Detection</SelectItem>
-                  </Link>
-                  <Link href="https://github.com/cyprus09/Car-Cabin-Monitoring">
-                  <SelectItem value="sveltekit">Action Detection 1</SelectItem>
-                  </Link>
-                  <Link href="https://github.com/cyprus09/Car-Cabin-Monitoring">
-                  <SelectItem value="astro">Action Detection 2</SelectItem>
-                  </Link>
+                  <SelectItem value="https://google.com">YoloV7 (Object Recognition)</SelectItem>
+                  <SelectItem value="https://www.youtube.com">Action Recognition 1</SelectItem>
+                  <SelectItem value="https://www.youtube.com/watch?v=5eCg1Def1ik">Action Recognition 2</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -56,7 +51,12 @@ export function CardWithForm() {
       </CardContent>
       <CardFooter className="flex justify-between">
         <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
+        <Button onClick={() => {const selectElement = document.querySelector('select');
+                if (selectElement) {
+                  const url = selectElement.value;
+                  window.open(url, '_blank');
+                }
+                }}>Show</Button>
       </CardFooter>
     </Card>
     </div>
