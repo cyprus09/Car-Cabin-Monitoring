@@ -10,9 +10,9 @@ function NavBar() {
 
   const fontStyles = {
     fontFamily: 'Roboto, sans-serif', 
-    fontSize: '1.5rem',
+    fontSize: '1.25rem',
     fontWeight: 'bold', 
-    color: '#CF9FFF', 
+    color: 'rgb(255, 207, 49)', 
   };
 
   return (

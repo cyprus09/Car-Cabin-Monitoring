@@ -83,7 +83,7 @@ export function Contacts() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-        <a href="https://github.com/cyprus09/Car-Cabin-Monitoring" target="_blank" rel="noopener noreferrer">
+        <a href="https://entuedu-my.sharepoint.com/:w:/r/personal/cwong046_e_ntu_edu_sg/_layouts/15/Doc.aspx?sourcedoc=%7BA1A1A950-F167-4626-8276-0131FF4227A4%7D&file=EE07%20DIP%20REPORT.docx&action=default&mobileredirect=true" target="_blank" rel="noopener noreferrer">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Documentation
             </NavigationMenuLink>
