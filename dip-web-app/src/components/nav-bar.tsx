@@ -21,7 +21,6 @@ function NavBar() {
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              {/* LOGO */}
               <Link href="/">
                 <h1 style={fontStyles}>Car-Cabin-Monitoring System</h1>
               </Link>
@@ -33,7 +32,7 @@ function NavBar() {
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
               }`}>
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-l text-black py-3 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+              <li className="pb-6 text-l text-black py-3 px-6 text-center border-b-2 md:border-b-0 hover:text-yellow-500 hover:bg-transparent">
                   <Contacts/>
                 </li>
               </ul>

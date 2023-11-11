@@ -41,8 +41,7 @@ export function CardWithForm() {
                 </SelectTrigger>
                 <SelectContent position="popper">
                   <SelectItem value="https://youtu.be/sHLLUrXlKNo">COCO (Object Recognition)</SelectItem>
-                  <SelectItem value="/Users/Dell1/Downloads/front1_outcome.MP4">Action Recognition 1</SelectItem>
-                  <SelectItem value="https://www.youtube.com/watch?v=5eCg1Def1ik">Action Recognition 2</SelectItem>
+                  <SelectItem value="https://youtu.be/7qzvKsNlfH0">Action (Drive&Act) + Object Recognition(COCO)</SelectItem>
                 </SelectContent>
               </Select>
             </div>

@@ -22,7 +22,7 @@ const components: { title: string; description: string }[] = [
       "Responsible for the entire web app, helping with action detection and consultations, project report",
   },
   {
-    title: "Li Jinyuang",
+    title: "LiJinyuang",
     description:
       "Implemented the Temporal Shift Module for Action Recognition",
   },
@@ -52,38 +52,34 @@ export function Contacts() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-            <a href="https://blogs.ntu.edu.sg/ee3180-2324s1-e007/wp-login.php?privacy=2&redirect_to=https%3A%2F%2Fblogs.ntu.edu.sg%2Fee3180-2324s1-e007%2F" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Group Blogs
                 </NavigationMenuLink>
             </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Meet the Team</NavigationMenuTrigger>
+    <NavigationMenuTrigger>Meet the Team</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
-                <div>
-                <div>
+                <li key={component.title} className="flex items-center space-x-4">
+                  <div>
                     <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback>CN</AvatarFallback>
-                    </Avatar>   
-                </div>
-                <div>           
-                <ListItem
-                  key={component.title}
-                  title={component.title}>
-                  {component.description}
-                </ListItem>
-                </div>
-                </div>
+                      <AvatarImage src={`/images/${component.title}.jpeg`} alt="Avatar"/> 
+                      <AvatarFallback>{component.title[0]}</AvatarFallback>
+                    </Avatar>
+                  </div>
+                  <div>
+                    <ListItem title={component.title}>{component.description}</ListItem>
+                  </div>
+                </li>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-        <a href="https://entuedu-my.sharepoint.com/:w:/r/personal/cwong046_e_ntu_edu_sg/_layouts/15/Doc.aspx?sourcedoc=%7BA1A1A950-F167-4626-8276-0131FF4227A4%7D&file=EE07%20DIP%20REPORT.docx&action=default&mobileredirect=true" target="_blank" rel="noopener noreferrer">
+        <a href="#" target="_blank" rel="noopener noreferrer">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Documentation
             </NavigationMenuLink>
