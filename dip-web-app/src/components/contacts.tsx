@@ -54,19 +54,19 @@ export function Contacts() {
         <NavigationMenuItem>
             <a href="#" target="_blank" rel="noopener noreferrer">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Group Blogs
+                    Group Blogs 🖊️
                 </NavigationMenuLink>
             </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-    <NavigationMenuTrigger>Meet the Team</NavigationMenuTrigger>
+    <NavigationMenuTrigger>Meet the Team 🙋🏼</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <li key={component.title} className="flex items-center space-x-4">
                   <div>
                     <Avatar>
-                      <AvatarImage src={`/images/${component.title}.jpeg`} alt="Avatar"/> 
+                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                       <AvatarFallback>{component.title[0]}</AvatarFallback>
                     </Avatar>
                   </div>
@@ -81,14 +81,14 @@ export function Contacts() {
         <NavigationMenuItem>
         <a href="#" target="_blank" rel="noopener noreferrer">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Documentation
+                Documentation 📔
             </NavigationMenuLink>
         </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
         <a href="https://github.com/cyprus09/Car-Cabin-Monitoring" target="_blank" rel="noopener noreferrer">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Github
+                Github 👩🏼‍💻
             </NavigationMenuLink>
         </a>
         </NavigationMenuItem>

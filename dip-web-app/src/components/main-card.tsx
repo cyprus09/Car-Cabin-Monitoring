@@ -24,7 +24,7 @@ import {
 export function CardWithForm() {
 
   return (
-    <div className="gradient display-flex justify-center align-center">
+    <div className="gradient min-h-screen display-flex justify-center align-center">
     <Card className="w-[350px]">
       <CardHeader>
         <CardTitle>Create Model</CardTitle>
