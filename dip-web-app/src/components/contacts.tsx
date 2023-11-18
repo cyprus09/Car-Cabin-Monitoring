@@ -1,13 +1,13 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar } from "@/components/ui/avatar"
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Cyrus from '../images/Cyrus.jpeg';
 import LiJingyuang from '../images/LiJinyuang.jpeg';
 import Mayank from '../images/Mayank.jpeg';
+import Hadee from '../images/Hadee.jpeg';
 
 
 import { cn } from "@/lib/utils"
@@ -29,7 +29,7 @@ const imageMappings: ImageMappings = {
   'Cyrus': Cyrus,
   'LiJinyuang': LiJingyuang,
   'Mayank': Mayank,
-  // Add more mappings as needed
+  'Hadee': Hadee,
 };
 
 const components: { title: string; description: string }[] = [

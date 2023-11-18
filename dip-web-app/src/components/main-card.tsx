@@ -40,8 +40,8 @@ export function CardWithForm() {
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  <SelectItem value="https://youtu.be/sHLLUrXlKNo">COCO (Object Recognition)</SelectItem>
-                  <SelectItem value="https://youtu.be/7qzvKsNlfH0">Action (Drive&Act) + Object Recognition(COCO)</SelectItem>
+                  <SelectItem value="https://youtu.be/YT3bl8vfPYc">COCO (Object Recognition)</SelectItem>
+                  <SelectItem value="https://youtu.be/tLbbmUXqAhE">Action (Drive&Act) + Object Recognition(COCO)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
