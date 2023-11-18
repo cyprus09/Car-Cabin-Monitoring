@@ -3,6 +3,12 @@
 import * as React from "react"
 import Link from "next/link"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { StaticImageData } from 'next/image';
+import Image from 'next/image';
+import Cyrus from '../images/Cyrus.jpeg';
+import LiJingyuang from '../images/LiJinyuang.jpeg';
+import Mayank from '../images/Mayank.jpeg';
+
 
 import { cn } from "@/lib/utils"
 import {
@@ -14,6 +20,17 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+
+type ImageMappings = {
+  [key: string]: StaticImageData;
+};
+
+const imageMappings: ImageMappings = {
+  'Cyrus': Cyrus,
+  'LiJinyuang': LiJingyuang,
+  'Mayank': Mayank,
+  // Add more mappings as needed
+};
 
 const components: { title: string; description: string }[] = [
   {
@@ -52,7 +69,7 @@ export function Contacts() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://blogs.ntu.edu.sg/ee3180-2324s1-e007/discussion/" target="_blank" rel="noopener noreferrer">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Group Blogs 🖊️
                 </NavigationMenuLink>
@@ -61,25 +78,24 @@ export function Contacts() {
         <NavigationMenuItem>
     <NavigationMenuTrigger>Meet the Team 🙋🏼</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <li key={component.title} className="flex items-center space-x-4">
-                  <div>
-                    <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                      <AvatarFallback>{component.title[0]}</AvatarFallback>
-                    </Avatar>
-                  </div>
-                  <div>
-                    <ListItem title={component.title}>{component.description}</ListItem>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </NavigationMenuContent>
+          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+          {components.map((component) => (
+          <li key={component.title} className="flex items-center space-x-4">
+          <div>
+          <Avatar>
+          <Image src={imageMappings[component.title]} alt={`@${component.title}`} width={40} height={40}/>
+          </Avatar>
+          </div>
+          <div>
+            <ListItem title={component.title}>{component.description}</ListItem>
+          </div>
+          </li>
+          ))}
+          </ul>
+        </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/1uYctFY65D1rmpQBbc1C8j4_nh2jIZyfS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Documentation 📔
             </NavigationMenuLink>
