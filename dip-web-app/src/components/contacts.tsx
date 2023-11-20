@@ -8,6 +8,7 @@ import Cyrus from '../images/Cyrus.jpeg';
 import LiJingyuang from '../images/LiJinyuang.jpeg';
 import Mayank from '../images/Mayank.jpeg';
 import Hadee from '../images/Hadee.jpeg';
+import Dominic from '../images/Dominic.jpeg';
 
 
 import { cn } from "@/lib/utils"
@@ -30,6 +31,7 @@ const imageMappings: ImageMappings = {
   'LiJinyuang': LiJingyuang,
   'Mayank': Mayank,
   'Hadee': Hadee,
+  'Dominic': Dominic
 };
 
 const components: { title: string; description: string }[] = [
